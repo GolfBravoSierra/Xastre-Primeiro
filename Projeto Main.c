@@ -7,6 +7,7 @@
 int main() 
 {
 printf("com vc esta\n");
+printf("isso eh um teste");
 
 return 0;
 }
