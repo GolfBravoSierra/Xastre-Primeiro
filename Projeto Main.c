@@ -36,8 +36,8 @@ void quicksort(int values[], int began, int end)
 int main() 
 {
 	int ar[5]={5,9,13,27,2};
-	for(int i=0; i<5; i++){printf(ar[i])}
-	quicksort(ar, 0, 10}
-	for(int i=0; i<5; i++){printf(ar[i])}
+	for(int i=0; i<5; i++){printf(ar[i]);}
+	quicksort(ar, 0, 10);
+	for(int i=0; i<5; i++){printf(ar[i]);}
 return 0;
 }
