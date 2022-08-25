@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdio.h>
 
 void quicksort(int values[], int began, int end)
 {
@@ -35,9 +34,13 @@ void quicksort(int values[], int began, int end)
 
 int main() 
 {
-	int ar[5]={5,9,13,27,2};
-	for(int i=0; i<5; i++){printf("%i ",ar[i]);}
-	quicksort(ar, 0, 5);
-	for(int i=0; i<5; i++){printf("%i ",ar[i]);}
+	int ar[100]={};
+  for(int i=0; i<100; i++){
+    ar[i]=rand()%100;
+  }
+	for(int i=0; i<100; i++){printf("%i ",ar[i]);}
+	quicksort(ar, 0, 100);
+  printf("\n\n");
+	for(int i=0; i<100; i++){printf("%i ",ar[i]);}
 return 0;
 }
