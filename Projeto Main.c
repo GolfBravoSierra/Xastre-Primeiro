@@ -60,6 +60,6 @@ int main()
 	for(int i=0; i<100; i++){printf("%i ",ar[i]);}
   bubbleSort(ar, 100);
   printf("\n\nBubble sort:\n");
-	for(int i=0; i<100; i++){printf("%i ",ar[i]);}
+	for(int i=0; i<100; i++){printf("%i ",ar[i
 return 0;
 }
