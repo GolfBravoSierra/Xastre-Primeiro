@@ -49,17 +49,18 @@ void bubbleSort(int v[], int n){
 
 int main() 
 {
-	int ar[100]={};
-  for(int i=0; i<100; i++){
+	int ar[1000]={};
+  for(int i=0; i<1000; i++){
     ar[i]=rand()%100;
   }
   printf("array original:\n");
-	for(int i=0; i<100; i++){printf("%i ",ar[i]);}
-	quicksort(ar, 0, 100);
+	for(int i=0; i<1000; i++){printf("%i ",ar[i]);}
+	quicksort(ar, 0, 1000);
   printf("\n\nQuick sort:\n");
-	for(int i=0; i<100; i++){printf("%i ",ar[i]);}
-  bubbleSort(ar, 100);
+	for(int i=0; i<1000; i++){printf("%i ",ar[i]);}
+  bubbleSort(ar, 1000);
   printf("\n\nBubble sort:\n");
-	for(int i=0; i<100; i++){printf("%i ",ar[i]);}
+	for(int i=0; i<1000; i++){printf("%i ",ar[i
+	for(int i=0; i<1000 i++){printf("%i ",ar[i]);}
 return 0;
 }
