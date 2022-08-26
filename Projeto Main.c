@@ -32,10 +32,10 @@ void quicksort(int values[], int began, int end)
 		quicksort(values, i, end);
 }
 
-void swap(int *a, int *b){ 
-    int temp = *a; 
-    *a = *b; 
-    *b = temp; 
+void swap(int a, int b){ 
+    int temp = a; 
+    a = b; 
+    b = temp; 
 } 
 void bubbleSort(int v[], int n){ 
     if (n < 1)return; 
