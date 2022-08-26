@@ -108,11 +108,11 @@ int main()
     }
   for(int i =0; i<1000; i++){// esse for é para faser a media do vetor
     soma = soma + ar[i];
-    printf("soma para verificar a media\n%d\n", soma);
+    //printf("soma para verificar a media\n%d\n", soma);
   }
   media=soma/1000;
-printf("\n\nmediana do array inicial: %i\n\n", (ar[5]+ar[6])/2);// printa a mediana do array inicial
-    printf("\n\nmediana do bouble short: %i\n\n", (ar2[5]+ar2[6])/2);// printa a mediana do array do bobbleshort
+printf("\n\nmediana do array inicial: %i\n\n", (ar[500]+ar[501])/2);// printa a mediana do array inicial
+    printf("\n\nmediana do bouble short: %i\n\n", (ar2[500]+ar2[501])/2);// printa a mediana do array do bobbleshort
     printf("\n\nmedia: %.2f\n\n", media);//printa a media do array
 
     
