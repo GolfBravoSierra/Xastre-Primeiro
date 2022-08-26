@@ -108,4 +108,3 @@ int main()
     printf("\n\nmedia: %.1f\n\n", avarage(ar));//printa a media do array
     return 0;
 }
-
