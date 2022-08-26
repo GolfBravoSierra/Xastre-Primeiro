@@ -58,13 +58,36 @@ int main()
     ar[i]=rand()%1000;
     ar2[i]=ar[i];
   }
-  printf("array original:\n");
-	for(int i=0; i<n; i++){printf("%i ",ar[i]);}
+  printf("========[Projeto xave]========");
+  printf("\n\n >Array original:\n");
+	for(int i=0; i<n; i++)
+	{
+		if(i%25==0)
+		{
+			printf("\n");
+		}
+		printf("%.3i ",ar[i]);
+	}
 	quicksort(ar, 0, n);
-  printf("\n\nQuick sort:\n");
-	for(int i=0; i<n; i++){printf("%i ",ar[i]);}
+  printf("\n\n >Quick sort:\n");
+	for(int i=0; i<n; i++)
+	{
+		if(i%25==0)
+		{
+			printf("\n");
+		}
+		printf("%.3i ",ar[i]);
+	}
   bubbleSort(ar2, n);
-  printf("\n\nBubble sort:\n");
-	for(int i=0; i<n; i++){printf("%i ",ar[i]);}
+  printf("\n\n\n >Bubble sort:\n");
+	for(int i=0; i<n; i++)
+	{
+		if(i%25==0)
+		{
+			printf("\n");
+		}
+		printf("%.3i ",ar[i]);
+	}
+  printf("\n\n\n");
 return 0;
 }
