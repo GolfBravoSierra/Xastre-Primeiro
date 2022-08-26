@@ -61,5 +61,6 @@ int main()
   bubbleSort(ar, 1000);
   printf("\n\nBubble sort:\n");
 	for(int i=0; i<1000; i++){printf("%i ",ar[i
+	for(int i=0; i<1000 i++){printf("%i ",ar[i]);}
 return 0;
 }
