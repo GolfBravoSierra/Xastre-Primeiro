@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 void quicksort(int values[], int began, int end)
 {
@@ -42,25 +43,28 @@ void bubbleSort(int v[], int n){
  
     for (int i=0; i<n; i++) 
         if (v[i] > v[i+1]) 
-            swap(&v[i], &v[i+1]);  
+            swap(v[i], v[i+1]);  
     bubbleSort(v, n-1); 
 } 
 
 
 int main() 
 {
+  srand(time(NULL));
+  int n=1000;
 	int ar[1000]={};
-  for(int i=0; i<1000; i++){
-    ar[i]=rand()%100;
+  int ar2[1000]={};
+  for(int i=0; i<n; i++){
+    ar[i]=rand()%1000;
+    ar2[i]=ar[i];
   }
   printf("array original:\n");
-	for(int i=0; i<1000; i++){printf("%i ",ar[i]);}
-	quicksort(ar, 0, 1000);
+	for(int i=0; i<n; i++){printf("%i ",ar[i]);}
+	quicksort(ar, 0, n);
   printf("\n\nQuick sort:\n");
-	for(int i=0; i<1000; i++){printf("%i ",ar[i]);}
-  bubbleSort(ar, 1000);
+	for(int i=0; i<n; i++){printf("%i ",ar[i]);}
+  bubbleSort(ar2, n);
   printf("\n\nBubble sort:\n");
-	for(int i=0; i<1000; i++){printf("%i ",ar[i
-	for(int i=0; i<1000 i++){printf("%i ",ar[i]);}
+	for(int i=0; i<n; i++){printf("%i ",ar[i]);}
 return 0;
 }
