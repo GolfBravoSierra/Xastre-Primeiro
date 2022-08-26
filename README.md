@@ -4,7 +4,7 @@
 
 Primeiro trabalho de PI WEB 
 
-Esse projeto é um trabalho em conjunto que visa melhor ambientação dentro do Github. 
+Esse projeto é um trabalho em conjunto que visa melhorar a ambientação dentro do Github. 
 
 ## :hammer: Funcionalidades do projeto :wrench:
 - `Funcionalidade 1`: Um Vetor que gera 1000 caracteres aletorios;
