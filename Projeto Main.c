@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
+///funcao que faz um quickShort
 void quicksort(int values[], int began, int end)
 {
 	int i, j, pivo, aux;
@@ -33,38 +34,78 @@ void quicksort(int values[], int began, int end)
 		quicksort(values, i, end);
 }
 
-void swap(int a, int b){ 
-    int temp = a; 
-    a = b; 
-    b = temp; 
-} 
-void bubbleSort(int v[], int n){ 
-    if (n < 1)return; 
- 
-    for (int i=0; i<n; i++) 
-        if (v[i] > v[i+1]) 
-            swap(v[i], v[i+1]);  
-    bubbleSort(v, n-1); 
-} 
-
-
-int main() 
+///funcao que faz a media do vetor
+float avarage(int *vet)
 {
-  srand(time(NULL));
-  int n=1000;
-	int ar[1000]={};
-  int ar2[1000]={};
-  for(int i=0; i<n; i++){
+    float media;
+    for(int i = 0; i<1000;i++)
+    {
+        media += vet[i];
+    }
+    media /= 2;
+    return media;
+}
+
+///funcao de swap
+void swap(int a, int b){
+    int temp = a;
+    a = b;
+    b = temp;
+}
+
+///funcao que faz um bobbleShort
+void bubbleSort(int v[], int n){
+    if (n < 1)return;
+
+    for (int i=0; i<n; i++)
+        if (v[i] > v[i+1])
+            swap(v[i], v[i+1]);
+    bubbleSort(v, n-1);
+}
+
+
+int main()
+{
+    srand(time(NULL));//muda a seed do codigo para deixar a rand aleatoria de a cordo com o horario atual
+    //iniciando variaveis
+    int n=1000;
+    int ar[1000]={};
+    int ar2[1000]={};
+
+    //alocando 1000 numeros aleatorios no vetor
+    for(int i=0; i<n; i++){
     ar[i]=rand()%1000;
     ar2[i]=ar[i];
   }
-  printf("array original:\n");
-	for(int i=0; i<n; i++){printf("%i ",ar[i]);}
-	quicksort(ar, 0, n);
-  printf("\n\nQuick sort:\n");
-	for(int i=0; i<n; i++){printf("%i ",ar[i]);}
-  bubbleSort(ar2, n);
-  printf("\n\nBubble sort:\n");
-	for(int i=0; i<n; i++){printf("%i ",ar[i]);}
-return 0;
+
+    //printa o array original
+    printf("array original:\n");
+    for(int i=0; i<n; i++){
+        printf("%i ",ar[i]);
+    }
+
+    //chama funcao quickShort
+    quicksort(ar2, 0, n);
+
+    //printa o array do quickshort
+    printf("\n\nQuick sort:\n");
+    for(int i=0; i<n; i++){
+        printf("%i ",ar2[i]);
+    }
+
+    //chama a funcao bobbleshort
+    bubbleSort(ar2, n);
+
+    //printa o array do bobbleShort
+    printf("\n\nBubble sort:\n");
+    for(int i=0; i<n; i++){
+        printf("%i ",ar[i]);
+    }
+
+
+    printf("\n\nmediana do array inicial: %i\n\n", (ar[500]+ar[501])/2);// printa a mediana do array inicial
+    printf("\n\nmediana do bouble short: %i\n\n", (ar2[500]+ar2[501])/2);// printa a mediana do array do bobbleshort
+    printf("\n\nmedia: %.1f\n\n", avarage(ar));//printa a media do array
+    return 0;
 }
+
