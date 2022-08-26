@@ -38,7 +38,7 @@ void quicksort(int values[], int began, int end)
 float avarage(int *vet)
 {
     float media;
-    for(int i = 0; i<1000;i++)
+    for(int i = 0; i<10;i++)// mudei aqui
     {
         media += vet[i];
     }
@@ -71,17 +71,22 @@ int main()
     int n=1000;
     int ar[1000]={};
     int ar2[1000]={};
+    float media;//media do vetor
+    int soma=0;// soma para a media do vetor
 
     //alocando 1000 numeros aleatorios no vetor
     for(int i=0; i<n; i++){
     ar[i]=rand()%1000;
     ar2[i]=ar[i];
+
   }
+
 
     //printa o array original
     printf("array original:\n");
     for(int i=0; i<n; i++){
         printf("%i ",ar[i]);
+        
     }
 
     //chama funcao quickShort
@@ -101,10 +106,15 @@ int main()
     for(int i=0; i<n; i++){
         printf("%i ",ar[i]);
     }
+  for(int i =0; i<1000; i++){// esse for é para faser a media do vetor
+    soma = soma + ar[i];
+    printf("soma para verificar a media\n%d\n", soma);
+  }
+  media=soma/1000;
+printf("\n\nmediana do array inicial: %i\n\n", (ar[5]+ar[6])/2);// printa a mediana do array inicial
+    printf("\n\nmediana do bouble short: %i\n\n", (ar2[5]+ar2[6])/2);// printa a mediana do array do bobbleshort
+    printf("\n\nmedia: %.2f\n\n", media);//printa a media do array
 
-
-    printf("\n\nmediana do array inicial: %i\n\n", (ar[500]+ar[501])/2);// printa a mediana do array inicial
-    printf("\n\nmediana do bouble short: %i\n\n", (ar2[500]+ar2[501])/2);// printa a mediana do array do bobbleshort
-    printf("\n\nmedia: %.1f\n\n", avarage(ar));//printa a media do array
+    
     return 0;
 }
