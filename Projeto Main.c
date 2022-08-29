@@ -70,7 +70,7 @@ int main()
     srand(time(NULL));//muda a seed do codigo para deixar a rand aleatoria de a cordo com o horario atual
     //iniciando variaveis
     int n=1000;
-    int ar[1000]={};
+    int ar[1000]={};// vetor original
     int ar2[1000]={};
     float media;//media do vetor
     int soma=0;// soma para a media do vetor
