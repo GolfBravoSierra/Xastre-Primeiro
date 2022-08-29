@@ -111,8 +111,8 @@ int main()
     //printf("soma para verificar a media\n%d\n", soma);
   }
   media=soma/1000;
-printf("\n\nmediana do array inicial: %i\n\n", (ar2[5]+ar2[6])/2);// printa a mediana do array inicial
-    printf("\n\nmediana do bouble short: %i\n\n", (ar2[5]+ar2[6])/2);// printa a mediana do array do bobbleshort
+printf("\n\nmediana do array inicial: %i\n\n", (ar2[n/2]+ar2[(n/2)+1])/2);// printa a mediana do array inicial
+    printf("\n\nmediana do bouble short: %i\n\n", (ar2[n/2]+ar2[(n/2)+1])/2);// printa a mediana do array do bobbleshort
     printf("\n\nmedia: %.2f\n\n", media);//printa a media do array
 
     
