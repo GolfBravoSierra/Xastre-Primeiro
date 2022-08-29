@@ -51,6 +51,7 @@ void swap(int a, int b){
     int temp = a;
     a = b;
     b = temp;
+
 }
 
 ///funcao que faz um bobbleShort
@@ -83,7 +84,7 @@ int main()
 
 
     //printa o array original
-    printf("array original:\n");
+    printf("Array Original:\n");
     for(int i=0; i<n; i++){
         printf("%i ",ar[i]);
         
@@ -93,7 +94,7 @@ int main()
     quicksort(ar2, 0, n);
 
     //printa o array do quickshort
-    printf("\n\nQuick sort:\n");
+    printf("\n\nQuickSort:\n");
     for(int i=0; i<n; i++){
         printf("%i ",ar2[i]);
     }
@@ -102,7 +103,7 @@ int main()
     bubbleSort(ar2, n);
 
     //printa o array do bobbleShort
-    printf("\n\nBubble sort:\n");
+    printf("\n\nBubbleSort:\n");
     for(int i=0; i<n; i++){
         printf("%i ",ar2[i]);
     }
@@ -111,10 +112,9 @@ int main()
     //printf("soma para verificar a media\n%d\n", soma);
   }
   media=soma/1000;
-printf("\n\nmediana do array inicial: %i\n\n", (ar2[n/2]+ar2[(n/2)+1])/2);// printa a mediana do array inicial
-    printf("\n\nmediana do bouble short: %i\n\n", (ar2[n/2]+ar2[(n/2)+1])/2);// printa a mediana do array do bobbleshort
-    printf("\n\nmedia: %.2f\n\n", media);//printa a media do array
-
-    
+    printf("\n\nMediana do Array Inicial: %i\n\n", (ar2[500]+ar2[501])/2);// printa a mediana do array inicial
+    printf("\n\nMediana do BubbleSort: %i\n\n", (ar2[500]+ar2[501])/2);// printa a mediana do array do bobbleshort
+    printf("\n\nMediana do QuickSort: %i\n\n", (ar2[500]+ar2[501])/2);
+    printf("\n\nMedia: %.2f\n\n", media);//printa a media do array
     return 0;
 }
