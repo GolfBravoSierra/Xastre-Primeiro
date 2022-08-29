@@ -51,6 +51,7 @@ void swap(int a, int b){
     int temp = a;
     a = b;
     b = temp;
+
 }
 
 ///funcao que faz um bobbleShort
@@ -115,7 +116,5 @@ int main()
     printf("\n\nMediana do BubbleSort: %i\n\n", (ar2[500]+ar2[501])/2);// printa a mediana do array do bobbleshort
     printf("\n\nMediana do QuickSort: %i\n\n", (ar2[500]+ar2[501])/2);
     printf("\n\nMedia: %.2f\n\n", media);//printa a media do array
-
-    
     return 0;
 }
