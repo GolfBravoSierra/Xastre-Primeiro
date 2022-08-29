@@ -1,5 +1,5 @@
 
-<h1 align="center"> Projeto para o Xastre (TEMP) </h1>	
+<h1 align="center"> Projeto para o Xastre  </h1>	
 
 
 Primeiro trabalho de PI WEB 
